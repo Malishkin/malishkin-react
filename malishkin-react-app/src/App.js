@@ -9,7 +9,7 @@ function App() {
   const hideCartHandler = () => { setCartIsVisible(false); };
   return (
    <React.Fragment>
-    { cartIsVisible && <Cart/>}
+    { cartIsVisible && <Cart onHideCart ={ hideCartHandler }/>}
      <Header onShowCart ={showCartHandler}/>
      <main><Meals/></main>
      
