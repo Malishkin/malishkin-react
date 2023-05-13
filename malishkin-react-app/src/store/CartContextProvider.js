@@ -27,8 +27,8 @@ const CartContextProvider = (props) => {
     const cartContext ={
         items: cartState.items,
         totalAmount: cartState.totalAmount,
-        addItemHandler: addItemHandler,
-        removeItemHandler: removeItemHandler,
+        addItem: addItemHandler,
+        removeItem: removeItemHandler,
     }
     return <CartContext.Provider value={ cartContext }>
         {props.children}
