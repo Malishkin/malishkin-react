@@ -4,7 +4,7 @@ import Modal from '../UI/Modal';
 
 const Cart =(props)=>{
     const cartItems = (<ul className={styles["cart-items"]}>{[{id: 'm1', name: 'Sushi', amount: 2, price: 10.99}].map(item =><li key={item.id}>{item.name}</li>)}</ul>);
-    return <Modal>
+    return <Modal onHideCart={props.onHideCart}>
             {cartItems}
                 <div className={styles.total}>
                     <span>Total</span>
